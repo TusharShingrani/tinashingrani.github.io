@@ -63,7 +63,8 @@ body {
     center top,
     center bottom;
   background-repeat: no-repeat;
-  opacity: 0.15;
+  opacity: 0.2;
+  transform: scaleY(0.3);
   z-index: 0;
 }
 
@@ -162,7 +163,7 @@ body {
 }
 
 .date:hover::after {
-  opacity: 0.2;
+  opacity: 0.4;
   transform: scaleY(1);
 }
 
@@ -238,7 +239,7 @@ body {
 }
 
 .name:hover::after {
-  opacity: 0.2;
+  opacity: 0.35;
   transform: scaleY(1);
 }
 
@@ -327,7 +328,7 @@ body {
 }
 
 .project:hover::after {
-  opacity: 0.15;
+  opacity: 0.3;
   transform: scaleY(1);
 }
 
@@ -635,7 +636,7 @@ body {
 }
 
 .learning:hover::before {
-  opacity: 0.2;
+  opacity: 0.4;
   transform: scaleY(1);
 }
 
