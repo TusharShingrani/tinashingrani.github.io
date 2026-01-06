@@ -20,7 +20,7 @@
       </div>
 
       <!-- Project 1 -->
-      <div class="tile project">
+      <div class="tile project has-popup" data-popup="project1">
         <h3>Project 1</h3>
       </div>
 
@@ -30,13 +30,13 @@
       </div>
 
       <!-- Name tile (tall - spans 2 rows) -->
-      <div class="tile name">
+      <div class="tile name has-popup" data-popup="about">
         <h1>TINA<br>SHINGRANI</h1>
         <p class="about-link">About</p>
       </div>
 
       <!-- Project 2 -->
-      <div class="tile project">
+      <div class="tile project has-popup" data-popup="project2">
         <h3>Project 2</h3>
       </div>
 
@@ -52,17 +52,27 @@
       </div>
 
       <!-- Project 3 -->
-      <div class="tile project">
+      <div class="tile project has-popup" data-popup="project3">
         <h3>Project 3</h3>
       </div>
 
       <!-- Learning outcomes -->
-      <div class="tile learning">
+      <div class="tile learning has-popup" data-popup="learning">
         <h3>learning<br>outcomes</h3>
       </div>
 
     </section>
   </main>
+
+  <!-- Popup Modal -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+      <button class="popup-close" id="popupClose">&times;</button>
+      <div id="popupBody">
+        <!-- Content will be inserted here by JavaScript -->
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
