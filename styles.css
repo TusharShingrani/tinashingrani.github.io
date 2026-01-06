@@ -1,0 +1,188 @@
+:root {
+  --navy: #0f1f3a;
+  --deep-blue: #1c2f57;
+  --blue: #425c99;
+  --soft-blue: #6f87bd;
+  --light-blue: #a8c0eb;
+  --cream: #f3f2f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0a1628;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.frame {
+  background: linear-gradient(180deg, #243a6b, #18294d);
+  padding: 2rem;
+  border-radius: 2.5rem;
+  max-width: 1400px;
+}
+
+.bento {
+  background: var(--deep-blue);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 180px);
+  gap: 1.5rem;
+}
+
+.tile {
+  border-radius: 1.8rem;
+  padding: 1.5rem;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tile:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.35);
+}
+
+/* Date tile */
+.date {
+  background: var(--soft-blue);
+}
+
+.date h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.date p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.date span {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-top: 0.3rem;
+}
+
+.weather {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 2.5rem;
+}
+
+/* Project tiles */
+.project {
+  background: var(--cream);
+  color: var(--blue);
+  display: flex;
+  align-items: flex-end;
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* Photo tile */
+.photo {
+  background: var(--soft-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Name tile - tall (2 rows) */
+.name {
+  grid-row: span 2;
+  background: var(--navy);
+}
+
+.name h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-link {
+  color: var(--soft-blue);
+  font-size: 1.2rem;
+  margin-top: auto;
+  opacity: 0.85;
+}
+
+/* Quote tile */
+.quote {
+  background: var(--light-blue);
+  color: #405b8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/* Contact tile */
+.contact {
+  background: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Learning outcomes - tall (2 rows) */
+.learning {
+  grid-row: span 2;
+  background: var(--navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/* Responsive  (prompting with chatgpt) */
+@media (max-width: 768px) {
+  .frame {
+    padding: 1.5rem;
+  }
+  
+  .bento {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-template-rows: auto;
+  }
+  
+  .tile {
+    grid-row: span 1 !important;
+    min-height: 180px;
+  }
+}
