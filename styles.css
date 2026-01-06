@@ -41,7 +41,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cdefs%3E%3Cpattern id='delft' patternUnits='userSpaceOnUse' width='100' height='100'%3E%3Crect width='100' height='100' fill='none'/%3E%3C!-- Floral motif --%3E%3Ccircle cx='50' cy='50' r='8' fill='none' stroke='%237b9cd4' stroke-width='1.5'/%3E%3Ccircle cx='50' cy='50' r='3' fill='%234a649e'/%3E%3Cpath d='M 50 42 Q 45 38 50 34 Q 55 38 50 42' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 58 50 Q 62 45 66 50 Q 62 55 58 50' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 50 58 Q 55 62 50 66 Q 45 62 50 58' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 42 50 Q 38 55 34 50 Q 38 45 42 50' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3C!-- Corner scrolls --%3E%3Cpath d='M 10 10 Q 15 8 18 12 Q 15 15 12 13' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 90 10 Q 85 8 82 12 Q 85 15 88 13' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 10 90 Q 15 92 18 88 Q 15 85 12 87' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 90 90 Q 85 92 82 88 Q 85 85 88 87' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3C!-- Decorative dots --%3E%3Ccircle cx='25' cy='25' r='2' fill='%237b9cd4'/%3E%3Ccircle cx='75' cy='25' r='2' fill='%237b9cd4'/%3E%3Ccircle cx='25' cy='75' r='2' fill='%237b9cd4'/%3E%3Ccircle cx='75' cy='75' r='2' fill='%237b9cd4'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23delft)'/%3E%3C/svg%3E");
+  background-image: url('delft-pattern.png');
   background-size: 100px 100px;
   background-repeat: repeat;
   opacity: 0.15;
@@ -108,7 +108,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cdefs%3E%3Cpattern id='date-pattern' patternUnits='userSpaceOnUse' width='80' height='80'%3E%3C!-- Delft tile pattern --%3E%3Ccircle cx='40' cy='40' r='6' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 40 34 L 35 30 L 40 28 L 45 30 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 46 40 L 50 35 L 52 40 L 50 45 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 40 46 L 45 50 L 40 52 L 35 50 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 34 40 L 30 45 L 28 40 L 30 35 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Ccircle cx='40' cy='40' r='2.5' fill='%234a649e'/%3E%3C!-- Corner flourishes --%3E%3Cpath d='M 8 8 Q 12 10 10 14' stroke='%237b9cd4' stroke-width='1' fill='none'/%3E%3Cpath d='M 72 8 Q 68 10 70 14' stroke='%237b9cd4' stroke-width='1' fill='none'/%3E%3Ccircle cx='15' cy='15' r='1.5' fill='%237b9cd4'/%3E%3Ccircle cx='65' cy='15' r='1.5' fill='%237b9cd4'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='80' height='80' fill='url(%23date-pattern)'/%3E%3C/svg%3E");
+  background-image: url('date-pattern.png');
   background-size: 80px 80px;
   background-repeat: repeat;
   opacity: 0;
@@ -156,7 +156,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cdefs%3E%3Cpattern id='name-pattern' patternUnits='userSpaceOnUse' width='120' height='120'%3E%3C!-- Large ornate flower --%3E%3Ccircle cx='60' cy='60' r='12' fill='none' stroke='%237b9cd4' stroke-width='1.5'/%3E%3Cpath d='M 60 48 Q 54 42 60 36 Q 66 42 60 48' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 72 60 Q 78 54 84 60 Q 78 66 72 60' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 60 72 Q 66 78 60 84 Q 54 78 60 72' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 48 60 Q 42 66 36 60 Q 42 54 48 60' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8'/%3E%3Cpath d='M 66 54 Q 70 48 75 52 Q 70 56 66 54' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 66 66 Q 70 72 65 76 Q 62 70 66 66' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 54 66 Q 50 72 45 68 Q 50 64 54 66' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 54 54 Q 50 48 55 44 Q 58 50 54 54' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.6'/%3E%3Ccircle cx='60' cy='60' r='4' fill='%234a649e'/%3E%3C!-- Scrollwork corners --%3E%3Cpath d='M 10 10 Q 20 8 22 18 Q 18 20 15 15' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 110 10 Q 100 8 98 18 Q 102 20 105 15' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 10 110 Q 20 112 22 102 Q 18 100 15 105' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3Cpath d='M 110 110 Q 100 112 98 102 Q 102 100 105 105' fill='none' stroke='%237b9cd4' stroke-width='1.2'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='120' height='120' fill='url(%23name-pattern)'/%3E%3C/svg%3E");
+  background-image: url('name-pattern.png');
   background-size: 120px 120px;
   background-repeat: repeat;
   opacity: 0;
@@ -223,7 +223,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cdefs%3E%3Cpattern id='project-pattern' patternUnits='userSpaceOnUse' width='60' height='60'%3E%3C!-- Small delft motifs --%3E%3Ccircle cx='30' cy='30' r='5' fill='none' stroke='%234a649e' stroke-width='1'/%3E%3Cpath d='M 30 25 L 27 23 L 30 22 L 33 23 Z' fill='%234a649e'/%3E%3Cpath d='M 35 30 L 37 27 L 38 30 L 37 33 Z' fill='%234a649e'/%3E%3Cpath d='M 30 35 L 33 37 L 30 38 L 27 37 Z' fill='%234a649e'/%3E%3Cpath d='M 25 30 L 23 33 L 22 30 L 23 27 Z' fill='%234a649e'/%3E%3Ccircle cx='30' cy='30' r='2' fill='%232d4573'/%3E%3C!-- Dots --%3E%3Ccircle cx='10' cy='10' r='1.5' fill='%234a649e'/%3E%3Ccircle cx='50' cy='10' r='1.5' fill='%234a649e'/%3E%3Ccircle cx='10' cy='50' r='1.5' fill='%234a649e'/%3E%3Ccircle cx='50' cy='50' r='1.5' fill='%234a649e'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='60' height='60' fill='url(%23project-pattern)'/%3E%3C/svg%3E");
+  background-image: url('project-pattern.png');
   background-size: 60px 60px;
   background-repeat: repeat;
   opacity: 0;
@@ -274,7 +274,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70'%3E%3Cdefs%3E%3Cpattern id='photo-pattern' patternUnits='userSpaceOnUse' width='70' height='70'%3E%3C!-- Delicate floral pattern --%3E%3Ccircle cx='35' cy='35' r='5' fill='none' stroke='rgba(255,255,255,0.6)' stroke-width='1'/%3E%3Cpath d='M 35 30 L 32 28 L 35 27 L 38 28 Z' fill='rgba(255,255,255,0.5)'/%3E%3Cpath d='M 40 35 L 42 32 L 43 35 L 42 38 Z' fill='rgba(255,255,255,0.5)'/%3E%3Cpath d='M 35 40 L 38 42 L 35 43 L 32 42 Z' fill='rgba(255,255,255,0.5)'/%3E%3Cpath d='M 30 35 L 28 38 L 27 35 L 28 32 Z' fill='rgba(255,255,255,0.5)'/%3E%3Ccircle cx='35' cy='35' r='2' fill='rgba(255,255,255,0.7)'/%3E%3C!-- Corner details --%3E%3Cpath d='M 8 8 Q 12 10 10 14' stroke='rgba(255,255,255,0.4)' stroke-width='0.8' fill='none'/%3E%3Cpath d='M 62 8 Q 58 10 60 14' stroke='rgba(255,255,255,0.4)' stroke-width='0.8' fill='none'/%3E%3Ccircle cx='15' cy='15' r='1' fill='rgba(255,255,255,0.5)'/%3E%3Ccircle cx='55' cy='15' r='1' fill='rgba(255,255,255,0.5)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='70' height='70' fill='url(%23photo-pattern)'/%3E%3C/svg%3E");
+  background-image: url('photo-pattern.png');
   background-size: 70px 70px;
   background-repeat: repeat;
   opacity: 0;
@@ -326,7 +326,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cdefs%3E%3Cpattern id='quote-pattern' patternUnits='userSpaceOnUse' width='90' height='90'%3E%3C!-- Elegant floral tile --%3E%3Ccircle cx='45' cy='45' r='7' fill='none' stroke='rgba(255,255,255,0.6)' stroke-width='1.2'/%3E%3Cpath d='M 45 38 Q 40 34 45 30 Q 50 34 45 38' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 52 45 Q 56 40 60 45 Q 56 50 52 45' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 45 52 Q 50 56 45 60 Q 40 56 45 52' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 38 45 Q 34 50 30 45 Q 34 40 38 45' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Ccircle cx='45' cy='45' r='3' fill='rgba(255,255,255,0.7)'/%3E%3C!-- Corner flourishes --%3E%3Cpath d='M 10 10 Q 15 8 18 13' stroke='rgba(255,255,255,0.5)' stroke-width='1' fill='none'/%3E%3Cpath d='M 80 10 Q 75 8 72 13' stroke='rgba(255,255,255,0.5)' stroke-width='1' fill='none'/%3E%3Ccircle cx='18' cy='18' r='1.5' fill='rgba(255,255,255,0.5)'/%3E%3Ccircle cx='72' cy='18' r='1.5' fill='rgba(255,255,255,0.5)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='90' height='90' fill='url(%23quote-pattern)'/%3E%3C/svg%3E");
+  background-image: url('quote-pattern.png');
   background-size: 90px 90px;
   background-repeat: repeat;
   opacity: 0;
@@ -373,7 +373,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cdefs%3E%3Cpattern id='contact-pattern' patternUnits='userSpaceOnUse' width='75' height='75'%3E%3C!-- Medium floral --%3E%3Ccircle cx='37.5' cy='37.5' r='6' fill='none' stroke='rgba(255,255,255,0.6)' stroke-width='1.1'/%3E%3Cpath d='M 37.5 31.5 Q 33 28 37.5 25 Q 42 28 37.5 31.5' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 43.5 37.5 Q 47 33 50 37.5 Q 47 42 43.5 37.5' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 37.5 43.5 Q 42 47 37.5 50 Q 33 47 37.5 43.5' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Cpath d='M 31.5 37.5 Q 28 42 25 37.5 Q 28 33 31.5 37.5' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7'/%3E%3Ccircle cx='37.5' cy='37.5' r='2.5' fill='rgba(255,255,255,0.7)'/%3E%3C!-- Decorative elements --%3E%3Cpath d='M 8 8 Q 13 9 12 14' stroke='rgba(255,255,255,0.4)' stroke-width='0.9' fill='none'/%3E%3Cpath d='M 67 8 Q 62 9 63 14' stroke='rgba(255,255,255,0.4)' stroke-width='0.9' fill='none'/%3E%3Ccircle cx='15' cy='15' r='1.2' fill='rgba(255,255,255,0.5)'/%3E%3Ccircle cx='60' cy='15' r='1.2' fill='rgba(255,255,255,0.5)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='75' height='75' fill='url(%23contact-pattern)'/%3E%3C/svg%3E");
+  background-image: url('contact-pattern.png');
   background-size: 75px 75px;
   background-repeat: repeat;
   opacity: 0;
@@ -429,7 +429,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65' height='65'%3E%3Cdefs%3E%3Cpattern id='learning-pattern' patternUnits='userSpaceOnUse' width='65' height='65'%3E%3C!-- Compact floral --%3E%3Ccircle cx='32.5' cy='32.5' r='5.5' fill='none' stroke='%237b9cd4' stroke-width='1'/%3E%3Cpath d='M 32.5 27 L 29.5 25 L 32.5 24 L 35.5 25 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 38 32.5 L 40 29.5 L 41 32.5 L 40 35.5 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 32.5 38 L 35.5 40 L 32.5 41 L 29.5 40 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Cpath d='M 27 32.5 L 25 35.5 L 24 32.5 L 25 29.5 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6'/%3E%3Ccircle cx='32.5' cy='32.5' r='2.2' fill='%234a649e'/%3E%3C!-- Minimal details --%3E%3Cpath d='M 7 7 Q 10 8 9 12' stroke='%237b9cd4' stroke-width='0.8' fill='none'/%3E%3Cpath d='M 58 7 Q 55 8 56 12' stroke='%237b9cd4' stroke-width='0.8' fill='none'/%3E%3Ccircle cx='12' cy='12' r='1' fill='%237b9cd4'/%3E%3Ccircle cx='53' cy='12' r='1' fill='%237b9cd4'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='65' height='65' fill='url(%23learning-pattern)'/%3E%3C/svg%3E");
+  background-image: url('learning-pattern.png');
   background-size: 65px 65px;
   background-repeat: repeat;
   opacity: 0;
