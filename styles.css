@@ -41,28 +41,10 @@ body {
   position: absolute;
   width: 80px;
   height: 120px;
-  background-image:
-    radial-gradient(ellipse 15px 20px at 50% 20%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 12px 15px at 35% 35%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 12px 15px at 65% 35%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 12px at 25% 50%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 12px at 75% 50%, var(--soft-blue) 50%, transparent 50%),
-    linear-gradient(to top, var(--soft-blue) 0%, var(--soft-blue) 60%, transparent 60%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    3px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 120'%3E%3C!-- Stem --%3E%3Cline x1='40' y1='120' x2='40' y2='50' stroke='%237b9cd4' stroke-width='2' /%3E%3C!-- Leaves --%3E%3Cpath d='M 40 80 Q 30 75 25 70 Q 30 72 40 75' fill='%237b9cd4' /%3E%3Cpath d='M 40 85 Q 50 80 55 75 Q 50 77 40 80' fill='%237b9cd4' /%3E%3C!-- Main flower --%3E%3Cg transform='translate(40,30)'%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='5' fill='%234a649e' /%3E%3C!-- Petals --%3E%3Cpath d='M 0 -5 Q -8 -15 -5 -20 Q 0 -18 5 -20 Q 8 -15 0 -5 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 0 5 Q -8 15 -5 20 Q 0 18 5 20 Q 8 15 0 5 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M -5 0 Q -15 -8 -20 -5 Q -18 0 -20 5 Q -15 8 -5 0 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 5 0 Q 15 -8 20 -5 Q 18 0 20 5 Q 15 8 5 0 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M -3 -3 Q -12 -12 -8 -16 Q -5 -12 -8 -8 Q -6 -6 -3 -3 Z' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 3 -3 Q 12 -12 8 -16 Q 5 -12 8 -8 Q 6 -6 3 -3 Z' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M -3 3 Q -12 12 -8 16 Q -5 12 -8 8 Q -6 6 -3 3 Z' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 3 3 Q 12 12 8 16 Q 5 12 8 8 Q 6 6 3 3 Z' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3C/g%3E%3C!-- Small buds --%3E%3Ccircle cx='25' cy='45' r='3' fill='%237b9cd4' /%3E%3Ccircle cx='55' cy='50' r='2.5' fill='%23a3b8db' /%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.2;
   transform: scaleY(0.3);
   z-index: 0;
@@ -134,28 +116,10 @@ body {
   height: 90px;
   top: 0.5rem;
   right: 0.5rem;
-  background-image:
-    radial-gradient(ellipse 12px 15px at 50% 15%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 12px at 35% 30%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 12px at 65% 30%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(circle 8px at 30% 50%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(circle 8px at 70% 50%, var(--soft-blue) 50%, transparent 50%),
-    linear-gradient(to top, var(--soft-blue) 0%, var(--soft-blue) 65%, transparent 65%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    2px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'%3E%3C!-- Stem --%3E%3Cline x1='30' y1='90' x2='30' y2='35' stroke='%237b9cd4' stroke-width='1.5' /%3E%3C!-- Leaf --%3E%3Cpath d='M 30 60 Q 20 57 18 52 Q 22 54 30 56' fill='%237b9cd4' /%3E%3C!-- Tulip flower --%3E%3Cg transform='translate(30,22)'%3E%3Cpath d='M -8 0 Q -10 -8 -8 -15 Q -5 -20 0 -22 Q 5 -20 8 -15 Q 10 -8 8 0 L 6 5 Q 0 8 -6 5 Z' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M -4 -2 Q -5 -8 -4 -13 L 0 -18 L 4 -13 Q 5 -8 4 -2 Z' fill='%23a3b8db' opacity='0.6' /%3E%3C!-- Details --%3E%3Cline x1='-3' y1='-5' x2='-3' y2='2' stroke='%234a649e' stroke-width='0.4' opacity='0.5' /%3E%3Cline x1='0' y1='-8' x2='0' y2='2' stroke='%234a649e' stroke-width='0.4' opacity='0.5' /%3E%3Cline x1='3' y1='-5' x2='3' y2='2' stroke='%234a649e' stroke-width='0.4' opacity='0.5' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -203,34 +167,10 @@ body {
   height: 220px;
   bottom: -2rem;
   right: -2rem;
-  background-image:
-    radial-gradient(ellipse 30px 40px at 50% 15%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 25px 35px at 30% 25%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 25px 35px at 70% 25%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 20px 30px at 20% 40%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 20px 30px at 80% 40%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 15px 25px at 35% 55%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 15px 25px at 65% 55%, var(--light-blue) 50%, transparent 50%),
-    linear-gradient(to top, var(--soft-blue) 0%, var(--soft-blue) 70%, transparent 70%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    4px 75%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 220'%3E%3C!-- Main stem --%3E%3Cpath d='M 90 220 Q 88 180 85 140 Q 83 100 80 60' stroke='%237b9cd4' stroke-width='3' fill='none' /%3E%3C!-- Side stems --%3E%3Cpath d='M 85 120 Q 65 110 50 100' stroke='%237b9cd4' stroke-width='2' fill='none' /%3E%3Cpath d='M 83 95 Q 100 88 115 82' stroke='%237b9cd4' stroke-width='2' fill='none' /%3E%3C!-- Leaves --%3E%3Cpath d='M 85 140 Q 65 135 55 128 Q 60 132 70 136 Q 80 139 85 140' fill='%237b9cd4' /%3E%3Cpath d='M 84 110 Q 102 105 112 98 Q 107 102 97 107 Q 87 111 84 110' fill='%237b9cd4' /%3E%3C!-- Large main flower --%3E%3Cg transform='translate(80,40)'%3E%3C!-- Outer petals --%3E%3Cpath d='M 0 -25 Q -12 -35 -8 -45 Q 0 -40 8 -45 Q 12 -35 0 -25' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M 18 -18 Q 28 -28 38 -24 Q 33 -18 28 -8 Q 22 -10 18 -18' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M 25 0 Q 35 0 40 8 Q 35 10 25 10 Q 23 5 25 0' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M 18 18 Q 28 28 25 35 Q 18 30 12 22 Q 14 18 18 18' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M 0 25 Q -8 35 -15 38 Q -10 30 0 25' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M -18 18 Q -28 28 -35 25 Q -30 18 -22 12 Q -18 14 -18 18' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M -25 0 Q -35 0 -40 -8 Q -35 -10 -25 -10 Q -23 -5 -25 0' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3Cpath d='M -18 -18 Q -28 -28 -25 -35 Q -18 -30 -12 -22 Q -14 -18 -18 -18' fill='%237b9cd4' stroke='%234a649e' stroke-width='1' /%3E%3C!-- Inner petals lighter --%3E%3Cpath d='M 0 -15 Q -8 -20 -5 -25 Q 0 -22 5 -25 Q 8 -20 0 -15' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M 11 -11 Q 16 -16 22 -14 Q 19 -11 16 -6 Q 13 -8 11 -11' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M 15 0 Q 20 0 23 5 Q 20 6 15 6 Q 14 3 15 0' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M 11 11 Q 16 16 14 20 Q 11 17 8 13 Q 9 11 11 11' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M 0 15 Q -5 20 -9 22 Q -6 18 0 15' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M -11 11 Q -16 16 -20 14 Q -17 11 -13 8 Q -11 9 -11 11' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M -15 0 Q -20 0 -23 -5 Q -20 -6 -15 -6 Q -14 -3 -15 0' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3Cpath d='M -11 -11 Q -16 -16 -14 -20 Q -11 -17 -8 -13 Q -9 -11 -11 -11' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.8' /%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='8' fill='%234a649e' /%3E%3Ccircle cx='0' cy='0' r='5' fill='%232d4573' /%3E%3C/g%3E%3C!-- Side flower --%3E%3Cg transform='translate(50,100)'%3E%3Cpath d='M 0 -6 Q -4 -10 -3 -12 Q 0 -11 3 -12 Q 4 -10 0 -6' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 0 6 Q -4 10 -3 12 Q 0 11 3 12 Q 4 10 0 6' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M -6 0 Q -10 -4 -12 -3 Q -11 0 -12 3 Q -10 4 -6 0' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 6 0 Q 10 -4 12 -3 Q 11 0 12 3 Q 10 4 6 0' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Ccircle cx='0' cy='0' r='3' fill='%234a649e' /%3E%3C/g%3E%3C!-- Top bud --%3E%3Cg transform='translate(115,82)'%3E%3Cpath d='M 0 -5 Q -3 -8 -2 -10 Q 0 -9 2 -10 Q 3 -8 0 -5' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Ccircle cx='0' cy='0' r='2' fill='%234a649e' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -298,28 +238,10 @@ body {
   height: 75px;
   bottom: 0.5rem;
   left: 0.5rem;
-  background-image:
-    radial-gradient(ellipse 10px 13px at 50% 15%, var(--medium-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 11px at 35% 28%, var(--medium-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 11px at 65% 28%, var(--medium-blue) 50%, transparent 50%),
-    radial-gradient(circle 6px at 25% 45%, var(--medium-blue) 50%, transparent 50%),
-    radial-gradient(circle 6px at 75% 45%, var(--medium-blue) 50%, transparent 50%),
-    linear-gradient(to top, var(--medium-blue) 0%, var(--medium-blue) 65%, transparent 65%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    2px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 75'%3E%3C!-- Stem --%3E%3Cline x1='25' y1='75' x2='25' y2='30' stroke='%234a649e' stroke-width='1.5' /%3E%3C!-- Small leaf --%3E%3Cpath d='M 25 50 Q 18 48 16 44 Q 20 46 25 47' fill='%234a649e' /%3E%3C!-- Simple round flower --%3E%3Cg transform='translate(25,18)'%3E%3C!-- Petals --%3E%3Cpath d='M 0 -10 Q -4 -14 -2 -16 Q 0 -14 2 -16 Q 4 -14 0 -10' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M 7 -7 Q 11 -11 13 -9 Q 11 -7 9 -3 Q 7 -5 7 -7' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M 10 0 Q 14 0 16 2 Q 14 4 10 4 Q 10 2 10 0' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M 7 7 Q 11 11 9 13 Q 7 11 5 7 Q 6 7 7 7' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M 0 10 Q -2 14 -4 15 Q -2 12 0 10' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M -7 7 Q -11 11 -13 9 Q -11 7 -9 3 Q -7 5 -7 7' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M -10 0 Q -14 0 -16 -2 Q -14 -4 -10 -4 Q -10 -2 -10 0' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3Cpath d='M -7 -7 Q -11 -11 -9 -13 Q -7 -11 -5 -7 Q -6 -7 -7 -7' fill='%234a649e' stroke='%232d4573' stroke-width='0.6' /%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='4' fill='%232d4573' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -371,28 +293,10 @@ body {
   height: 75px;
   bottom: 0.5rem;
   left: 0.5rem;
-  background-image:
-    radial-gradient(ellipse 10px 13px at 50% 15%, rgba(255,255,255,0.5) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 11px at 35% 28%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(ellipse 8px 11px at 65% 28%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(circle 6px at 25% 45%, rgba(255,255,255,0.5) 50%, transparent 50%),
-    radial-gradient(circle 6px at 75% 45%, rgba(255,255,255,0.5) 50%, transparent 50%),
-    linear-gradient(to top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.5) 65%, transparent 65%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    2px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 75'%3E%3C!-- Stem --%3E%3Cline x1='25' y1='75' x2='25' y2='32' stroke='rgba(255,255,255,0.6)' stroke-width='1.5' /%3E%3C!-- Leaf --%3E%3Cpath d='M 25 55 Q 17 52 14 47 Q 18 50 25 52' fill='rgba(255,255,255,0.5)' /%3E%3C!-- Delicate flower --%3E%3Cg transform='translate(25,20)'%3E%3C!-- Petals --%3E%3Cpath d='M 0 -8 Q -3 -12 -1 -14 Q 0 -12 1 -14 Q 3 -12 0 -8' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M 6 -6 Q 10 -10 12 -8 Q 10 -6 8 -2 Q 6 -4 6 -6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M 8 0 Q 12 0 14 2 Q 12 3 8 3 Q 8 1 8 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M 6 6 Q 10 10 8 12 Q 6 10 4 6 Q 5 6 6 6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M 0 8 Q -1 12 -3 13 Q -1 10 0 8' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M -6 6 Q -10 10 -12 8 Q -10 6 -8 2 Q -6 4 -6 6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M -8 0 Q -12 0 -14 -2 Q -12 -3 -8 -3 Q -8 -1 -8 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3Cpath d='M -6 -6 Q -10 -10 -8 -12 Q -6 -10 -4 -6 Q -5 -6 -6 -6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.5' /%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='3' fill='rgba(255,255,255,0.8)' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -444,46 +348,10 @@ body {
   left: 0;
   right: 0;
   height: 100px;
-  background-image:
-    radial-gradient(ellipse 12px 15px at 20% 15%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 15% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 25% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    linear-gradient(to top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 65%, transparent 65%),
-    radial-gradient(ellipse 12px 15px at 50% 15%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 45% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 55% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    linear-gradient(to top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 65%, transparent 65%),
-    radial-gradient(ellipse 12px 15px at 80% 15%, rgba(255,255,255,0.4) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 75% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 85% 28%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    linear-gradient(to top, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 65%, transparent 65%);
-  background-size:
-    40px 100%,
-    40px 100%,
-    40px 100%,
-    2px 70%,
-    40px 100%,
-    40px 100%,
-    40px 100%,
-    2px 70%,
-    40px 100%,
-    40px 100%,
-    40px 100%,
-    2px 70%;
-  background-position:
-    left center,
-    left center,
-    left center,
-    20% bottom,
-    center center,
-    center center,
-    center center,
-    50% bottom,
-    right center,
-    right center,
-    right center,
-    80% bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 100' preserveAspectRatio='none'%3E%3C!-- Three flowers with stems --%3E%3C!-- Left flower --%3E%3Cline x1='60' y1='100' x2='60' y2='45' stroke='rgba(255,255,255,0.5)' stroke-width='2' /%3E%3Cg transform='translate(60,30)'%3E%3Cpath d='M 0 -8 Q -4 -12 -2 -14 Q 0 -12 2 -14 Q 4 -12 0 -8' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 6 -6 Q 10 -10 12 -8 Q 10 -6 8 -2 Q 6 -4 6 -6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 8 0 Q 12 0 14 2 Q 12 3 8 3 Q 8 1 8 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 6 6 Q 10 10 8 12 Q 6 10 4 6 Q 5 6 6 6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 0 8 Q -2 12 -4 13 Q -2 10 0 8' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -6 6 Q -10 10 -12 8 Q -10 6 -8 2 Q -6 4 -6 6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -8 0 Q -12 0 -14 -2 Q -12 -3 -8 -3 Q -8 -1 -8 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -6 -6 Q -10 -10 -8 -12 Q -6 -10 -4 -6 Q -5 -6 -6 -6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Ccircle cx='0' cy='0' r='3' fill='rgba(255,255,255,0.7)' /%3E%3C/g%3E%3C!-- Middle flower --%3E%3Cline x1='150' y1='100' x2='150' y2='40' stroke='rgba(255,255,255,0.5)' stroke-width='2' /%3E%3Cg transform='translate(150,25)'%3E%3Cpath d='M 0 -10 Q -5 -15 -3 -18 Q 0 -15 3 -18 Q 5 -15 0 -10' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M 7 -7 Q 12 -12 15 -10 Q 12 -7 10 -3 Q 7 -5 7 -7' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M 10 0 Q 15 0 17 3 Q 15 4 10 4 Q 10 2 10 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M 7 7 Q 12 12 10 15 Q 7 12 5 7 Q 6 7 7 7' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M 0 10 Q -3 15 -5 16 Q -3 12 0 10' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M -7 7 Q -12 12 -15 10 Q -12 7 -10 3 Q -7 5 -7 7' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M -10 0 Q -15 0 -17 -3 Q -15 -4 -10 -4 Q -10 -2 -10 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Cpath d='M -7 -7 Q -12 -12 -10 -15 Q -7 -12 -5 -7 Q -6 -7 -7 -7' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.7' /%3E%3Ccircle cx='0' cy='0' r='4' fill='rgba(255,255,255,0.8)' /%3E%3C/g%3E%3C!-- Right flower --%3E%3Cline x1='240' y1='100' x2='240' y2='45' stroke='rgba(255,255,255,0.5)' stroke-width='2' /%3E%3Cg transform='translate(240,30)'%3E%3Cpath d='M 0 -8 Q -4 -12 -2 -14 Q 0 -12 2 -14 Q 4 -12 0 -8' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 6 -6 Q 10 -10 12 -8 Q 10 -6 8 -2 Q 6 -4 6 -6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 8 0 Q 12 0 14 2 Q 12 3 8 3 Q 8 1 8 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 6 6 Q 10 10 8 12 Q 6 10 4 6 Q 5 6 6 6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M 0 8 Q -2 12 -4 13 Q -2 10 0 8' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -6 6 Q -10 10 -12 8 Q -10 6 -8 2 Q -6 4 -6 6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -8 0 Q -12 0 -14 -2 Q -12 -3 -8 -3 Q -8 -1 -8 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Cpath d='M -6 -6 Q -10 -10 -8 -12 Q -6 -10 -4 -6 Q -5 -6 -6 -6' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.6' /%3E%3Ccircle cx='0' cy='0' r='3' fill='rgba(255,255,255,0.7)' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -530,28 +398,10 @@ body {
   height: 100px;
   top: -1rem;
   left: -1rem;
-  background-image:
-    radial-gradient(ellipse 14px 18px at 50% 15%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(ellipse 11px 14px at 35% 28%, rgba(255,255,255,0.25) 50%, transparent 50%),
-    radial-gradient(ellipse 11px 14px at 65% 28%, rgba(255,255,255,0.25) 50%, transparent 50%),
-    radial-gradient(circle 8px at 25% 45%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    radial-gradient(circle 8px at 75% 45%, rgba(255,255,255,0.3) 50%, transparent 50%),
-    linear-gradient(to top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.3) 65%, transparent 65%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    2px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 70 100'%3E%3C!-- Stem --%3E%3Cline x1='35' y1='100' x2='35' y2='42' stroke='rgba(255,255,255,0.5)' stroke-width='2' /%3E%3C!-- Leaves --%3E%3Cpath d='M 35 70 Q 25 67 22 62 Q 26 65 35 68' fill='rgba(255,255,255,0.4)' /%3E%3Cpath d='M 35 60 Q 45 57 48 52 Q 44 55 35 58' fill='rgba(255,255,255,0.4)' /%3E%3C!-- Layered flower --%3E%3Cg transform='translate(35,28)'%3E%3C!-- Outer layer --%3E%3Cpath d='M 0 -12 Q -6 -18 -4 -22 Q 0 -19 4 -22 Q 6 -18 0 -12' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M 9 -9 Q 15 -15 18 -12 Q 15 -9 12 -4 Q 9 -6 9 -9' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M 12 0 Q 18 0 20 4 Q 18 5 12 5 Q 12 2 12 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M 9 9 Q 15 15 12 18 Q 9 15 6 9 Q 7 9 9 9' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M 0 12 Q -4 18 -6 20 Q -4 15 0 12' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M -9 9 Q -15 15 -18 12 Q -15 9 -12 4 Q -9 6 -9 9' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M -12 0 Q -18 0 -20 -4 Q -18 -5 -12 -5 Q -12 -2 -12 0' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3Cpath d='M -9 -9 Q -15 -15 -12 -18 Q -9 -15 -6 -9 Q -7 -9 -9 -9' fill='rgba(255,255,255,0.5)' stroke='rgba(255,255,255,0.7)' stroke-width='0.7' /%3E%3C!-- Middle layer --%3E%3Cpath d='M 0 -8 Q -4 -12 -2 -14 Q 0 -12 2 -14 Q 4 -12 0 -8' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M 6 -6 Q 10 -10 12 -8 Q 10 -6 8 -2 Q 6 -4 6 -6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M 8 0 Q 12 0 14 2 Q 12 3 8 3 Q 8 1 8 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M 6 6 Q 10 10 8 12 Q 6 10 4 6 Q 5 6 6 6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M 0 8 Q -2 12 -4 13 Q -2 10 0 8' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M -6 6 Q -10 10 -12 8 Q -10 6 -8 2 Q -6 4 -6 6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M -8 0 Q -12 0 -14 -2 Q -12 -3 -8 -3 Q -8 -1 -8 0' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3Cpath d='M -6 -6 Q -10 -10 -8 -12 Q -6 -10 -4 -6 Q -5 -6 -6 -6' fill='rgba(255,255,255,0.6)' stroke='rgba(255,255,255,0.8)' stroke-width='0.6' /%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='5' fill='rgba(255,255,255,0.8)' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
@@ -607,28 +457,10 @@ body {
   height: 90px;
   bottom: -0.5rem;
   right: -0.5rem;
-  background-image:
-    radial-gradient(ellipse 12px 15px at 50% 15%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 35% 28%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(ellipse 10px 13px at 65% 28%, var(--light-blue) 50%, transparent 50%),
-    radial-gradient(circle 7px at 25% 45%, var(--soft-blue) 50%, transparent 50%),
-    radial-gradient(circle 7px at 75% 45%, var(--soft-blue) 50%, transparent 50%),
-    linear-gradient(to top, var(--soft-blue) 0%, var(--soft-blue) 65%, transparent 65%);
-  background-size:
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    100% 100%,
-    2px 70%;
-  background-position:
-    center top,
-    center top,
-    center top,
-    center top,
-    center top,
-    center bottom;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'%3E%3C!-- Stem --%3E%3Cline x1='30' y1='90' x2='30' y2='38' stroke='%237b9cd4' stroke-width='1.8' /%3E%3C!-- Leaf --%3E%3Cpath d='M 30 65 Q 22 62 20 57 Q 24 60 30 62' fill='%237b9cd4' /%3E%3C!-- Carnation-style flower --%3E%3Cg transform='translate(30,22)'%3E%3C!-- Layered petals --%3E%3Cpath d='M -10 0 Q -12 -8 -8 -12 Q -10 -8 -8 -4 Q -6 -2 -4 -2' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M -8 -4 Q -10 -10 -6 -14 Q -8 -10 -6 -6 Q -4 -4 -2 -3' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M -4 -6 Q -6 -12 -2 -16 Q -4 -12 -2 -8 Q 0 -6 2 -6' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 0 -8 Q -2 -14 2 -16 Q 0 -12 2 -8 Q 4 -6 6 -6' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 4 -6 Q 2 -12 6 -14 Q 4 -10 6 -6 Q 8 -4 10 -4' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 8 -4 Q 6 -10 10 -12 Q 8 -8 10 -4 Q 11 -2 12 0' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 10 0 Q 12 -4 14 -4 Q 12 0 10 4' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 10 4 Q 12 0 14 4 Q 12 6 10 8' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 8 6 Q 10 2 12 6 Q 10 10 6 12' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M 4 8 Q 6 4 8 8 Q 6 12 2 14' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M 0 8 Q 2 4 4 8 Q 2 12 -2 14' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M -4 8 Q -2 4 0 8 Q -2 12 -6 12' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3Cpath d='M -8 6 Q -6 2 -4 6 Q -6 10 -10 8' fill='%237b9cd4' stroke='%234a649e' stroke-width='0.6' /%3E%3Cpath d='M -10 4 Q -8 0 -6 4 Q -8 8 -12 6' fill='%23a3b8db' stroke='%234a649e' stroke-width='0.5' /%3E%3C!-- Center --%3E%3Ccircle cx='0' cy='0' r='4' fill='%234a649e' /%3E%3C/g%3E%3C/svg%3E");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: 0;
   transform: scaleY(0);
   transform-origin: bottom center;
