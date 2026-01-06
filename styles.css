@@ -33,6 +33,29 @@ body {
   max-width: 95vw;
   width: 100%;
   animation: gradientShift 20s ease infinite;
+  position: relative;
+}
+
+.frame::before {
+  content: '🌷';
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.15;
+  animation: tulipSway 10s ease-in-out infinite;
+  z-index: 0;
+}
+
+.frame::after {
+  content: '🌷';
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+  font-size: 2rem;
+  opacity: 0.15;
+  animation: tulipSway 10s ease-in-out infinite reverse;
+  z-index: 0;
 }
 
 @keyframes gradientShift {
@@ -46,9 +69,12 @@ body {
   border-radius: 2.5rem;
   display: grid;
   grid-template-columns: 2fr 1.3fr 1.8fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
   gap: 1.2rem;
-  min-height: 85vh;
+  height: calc(100vh - 13rem);
+  max-height: 800px;
+  position: relative;
+  z-index: 1;
 }
 
 .tile {
@@ -117,6 +143,17 @@ body {
   grid-column: 1;
   grid-row: 1;
   animation: gentleFloat 5s ease-in-out infinite;
+  position: relative;
+}
+
+.date::after {
+  content: '🌷';
+  position: absolute;
+  font-size: 4rem;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0.12;
+  animation: tulipSway 6s ease-in-out infinite;
 }
 
 .date h3 {
@@ -167,11 +204,12 @@ body {
 .name::after {
   content: '🌷';
   position: absolute;
-  font-size: 8rem;
+  font-size: 10rem;
   bottom: -2rem;
   right: -2rem;
-  opacity: 0.08;
+  opacity: 0.15;
   animation: tulipSway 8s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
 }
 
 @keyframes tulipSway {
@@ -218,17 +256,41 @@ body {
 .project::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, transparent, var(--soft-blue), transparent);
-  transform: translateX(-100%);
-  transition: transform 0.8s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  background-image:
+    radial-gradient(circle at 20% 30%, var(--soft-blue) 2px, transparent 2px),
+    radial-gradient(circle at 60% 70%, var(--soft-blue) 1.5px, transparent 1.5px),
+    radial-gradient(circle at 80% 20%, var(--soft-blue) 1px, transparent 1px),
+    radial-gradient(circle at 40% 60%, var(--soft-blue) 2px, transparent 2px);
+  background-size: 50px 50px, 40px 40px, 30px 30px, 45px 45px;
+  opacity: 0.06;
+  animation: delftPattern 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes delftPattern {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.project::after {
+  content: '🌷';
+  position: absolute;
+  font-size: 3rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  opacity: 0.08;
+  animation: tulipGrow 3s ease-in-out;
+  pointer-events: none;
 }
 
 .project:hover::before {
-  transform: translateX(100%);
+  opacity: 0.12;
+  transform: translate(-50%, -50%) rotate(180deg);
 }
 
 .project:nth-of-type(2) {
@@ -268,6 +330,16 @@ body {
   position: relative;
 }
 
+.photo::before {
+  content: '🌷';
+  position: absolute;
+  font-size: 3rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  opacity: 0.12;
+  animation: tulipSway 5s ease-in-out infinite;
+}
+
 .photo::after {
   content: '📸';
   position: absolute;
@@ -297,13 +369,21 @@ body {
 }
 
 .quote::before {
-  content: '';
+  content: '🌷 🌷 🌷';
   position: absolute;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
-  border-radius: 50%;
-  animation: pulseGlow 4s ease-in-out infinite;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  opacity: 0.15;
+  animation: tulipFloat 8s ease-in-out infinite;
+}
+
+@keyframes tulipFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.15; }
+  50% { transform: translateY(-10px) rotate(5deg); opacity: 0.2; }
 }
 
 @keyframes pulseGlow {
@@ -346,6 +426,16 @@ body {
 }
 
 .contact::before {
+  content: '🌷';
+  position: absolute;
+  font-size: 5rem;
+  top: -1rem;
+  left: -1rem;
+  opacity: 0.1;
+  animation: tulipSway 7s ease-in-out infinite;
+}
+
+.contact::after {
   content: '✉️';
   position: absolute;
   font-size: 6rem;
@@ -381,6 +471,16 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.learning::before {
+  content: '🌷';
+  position: absolute;
+  font-size: 4rem;
+  bottom: -0.5rem;
+  right: -0.5rem;
+  opacity: 0.1;
+  animation: tulipSway 9s ease-in-out infinite;
 }
 
 .learning::after {
