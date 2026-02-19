@@ -1,16 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tina Shingrani | UX/UI Designer</title>
-    <meta name="description" content="Portfolio of Tina Shingrani — UX/UI Student crafting beautiful and intuitive digital experiences." />
-    <script type="module" crossorigin src="/assets/vite-entry-19028bff.js"></script>
-    <link rel="stylesheet" href="/assets/vite-entry-c46b5e06.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tina Shingrani | UX/UI Designer</title>
+  <meta name="description" content="Portfolio of Tina Shingrani — UX/UI Student crafting beautiful, user-centred digital experiences." />
+  <link rel="icon" type="image/svg+xml" href="logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-circle">T</span>
+        <span class="logo-text">Tina Shingrani</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+        <li><a href="sem3/" class="nav-link sem3-link" target="_blank">Sem 3 ↗</a></li>
+        <li>
+          <a href="tina_cv.pdf" download="Tina_Shingrani_CV.pdf" class="btn btn-sm">
+            Download CV
+          </a>
+        </li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Hello, I'm</p>
+      <h1 class="hero-name">Tina <span class="accent">Shingrani</span></h1>
+      <p class="hero-subtitle">UX/UI Student · Hogeschool Rotterdam</p>
+      <p class="hero-desc">
+        I craft beautiful, user-centred digital experiences —<br />
+        from research and wireframes to polished, interactive prototypes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="tina_cv.pdf" download="Tina_Shingrani_CV.pdf" class="btn btn-outline">Download CV</a>
+        <a href="sem3/" target="_blank" class="btn btn-ghost">Semester 3 →</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <span class="scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label reveal">Who I am</p>
+      <h2 class="section-title reveal">About Me.</h2>
+
+      <div class="about-grid">
+        <div class="about-avatar reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">TS</div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="reveal">
+            I'm a <strong>Communication &amp; Multimedia Design (CMD)</strong>
+            student at Hogeschool Rotterdam, specialising in UX/UI design.
+            I'm passionate about making technology feel intuitive, accessible,
+            and genuinely enjoyable to use.
+          </p>
+          <p class="reveal">
+            My design process always starts with people — I conduct user
+            research, build personas, map journeys, sketch wireframes, and
+            iterate through prototypes until the experience feels just right.
+          </p>
+          <p class="reveal">
+            Outside of my studies I love exploring visual design trends,
+            experimenting with micro-interactions, and finding inspiration
+            in everyday objects.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card reveal">
+              <span class="about-card-icon">🎨</span>
+              <div>
+                <strong>UI Design</strong>
+                <p>Figma · Adobe XD · Sketch</p>
+              </div>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-icon">🔍</span>
+              <div>
+                <strong>UX Research</strong>
+                <p>Interviews · Usability testing</p>
+              </div>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-icon">📐</span>
+              <div>
+                <strong>Prototyping</strong>
+                <p>Figma · Framer · InVision</p>
+              </div>
+            </div>
+            <div class="about-card reveal">
+              <span class="about-card-icon">✏️</span>
+              <div>
+                <strong>Visual Design</strong>
+                <p>Illustrator · Photoshop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section section-dark" id="education">
+    <div class="container">
+      <p class="section-label reveal">My journey</p>
+      <h2 class="section-title reveal">Education &amp; Experience.</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2023 — Present</span>
+            <h3>Communication &amp; Multimedia Design</h3>
+            <p class="timeline-company">Hogeschool Rotterdam</p>
+            <ul>
+              <li>UX/UI design with a user-centred approach.</li>
+              <li>User research, wireframing &amp; prototyping in Figma.</li>
+              <li>Agile collaboration on semester-long design projects.</li>
+              <li>Usability testing and iterative design cycles.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">Coming soon</span>
+            <h3>Internship</h3>
+            <p class="timeline-company">TBA</p>
+            <ul>
+              <li>Internship details will be added here soon.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label reveal">What I use</p>
+      <h2 class="section-title reveal">Skills &amp; Tools.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-pill reveal"><span>🖌️</span> Figma</div>
+        <div class="skill-pill reveal"><span>🎭</span> Adobe XD</div>
+        <div class="skill-pill reveal"><span>💎</span> Sketch</div>
+        <div class="skill-pill reveal"><span>🖼️</span> Photoshop</div>
+        <div class="skill-pill reveal"><span>✒️</span> Illustrator</div>
+        <div class="skill-pill reveal"><span>⚡</span> Framer</div>
+        <div class="skill-pill reveal"><span>🌐</span> HTML &amp; CSS</div>
+        <div class="skill-pill reveal"><span>🗺️</span> Miro</div>
+        <div class="skill-pill reveal"><span>📊</span> User Research</div>
+        <div class="skill-pill reveal"><span>📱</span> Responsive Design</div>
+        <div class="skill-pill reveal"><span>🧪</span> Usability Testing</div>
+        <div class="skill-pill reveal"><span>🗂️</span> Design Systems</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <p class="section-label reveal">My work</p>
+      <h2 class="section-title reveal">Projects.</h2>
+      <p class="section-desc reveal">
+        A showcase of my design work — from research and concept to final prototype.
+      </p>
+
+      <!-- Featured Semester 3 -->
+      <div class="featured-card reveal">
+        <div class="featured-badge">Featured</div>
+        <div class="featured-body">
+          <div class="featured-text">
+            <h3>Semester 3 Portfolio</h3>
+            <p>
+              My complete semester 3 design portfolio — covering two full
+              projects (<strong>SpeedMeet</strong> and <strong>Catchee</strong>)
+              with UX research, wireframes, user testing, brand guides, and
+              final prototypes.
+            </p>
+            <div class="tag-list">
+              <span class="tag">UX Research</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Wireframing</span>
+              <span class="tag">Prototyping</span>
+              <span class="tag">User Testing</span>
+            </div>
+          </div>
+          <a href="sem3/" target="_blank" class="btn btn-primary">
+            View Portfolio →
+          </a>
+        </div>
+      </div>
+
+      <!-- Project cards -->
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-emoji">⚡</div>
+          <h4>SpeedMeet</h4>
+          <p>A networking event concept designed to reduce social anxiety
+             through structured speed-meeting formats.</p>
+          <div class="tag-list">
+            <span class="tag">UX</span>
+            <span class="tag">Event Design</span>
+          </div>
+          <a href="sem3/" target="_blank" class="card-link">View in Sem 3 →</a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-emoji">🐦</div>
+          <h4>Catchee</h4>
+          <p>A brand identity and app concept for bird watching and
+             connecting nature enthusiasts.</p>
+          <div class="tag-list">
+            <span class="tag">Branding</span>
+            <span class="tag">UI Design</span>
+          </div>
+          <a href="sem3/catchee.html" target="_blank" class="card-link">View in Sem 3 →</a>
+        </div>
+
+        <div class="project-card project-card--soon reveal">
+          <div class="project-emoji">✨</div>
+          <h4>More Coming Soon</h4>
+          <p>New projects from upcoming semesters and internships will
+             appear here.</p>
+          <div class="tag-list">
+            <span class="tag">Stay tuned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div class="contact-text">
+        <p class="section-label reveal">Get in touch</p>
+        <h2 class="section-title reveal">Contact.</h2>
+        <p class="reveal">
+          I'm always open to new opportunities, collaborations, or a friendly
+          chat about design. Fill in the form or reach me directly by email.
+        </p>
+        <a href="mailto:tina.shingrani@example.com" class="contact-email reveal">
+          tina.shingrani@example.com
+        </a>
+        <div class="contact-cv reveal">
+          <p>Want to see my full background?</p>
+          <a href="tina_cv.pdf" download="Tina_Shingrani_CV.pdf" class="btn btn-outline">
+            Download CV
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" action="mailto:tina.shingrani@example.com" method="get" enctype="text/plain">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="body" rows="5" placeholder="What would you like to say?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Tina Shingrani · UX/UI Student</p>
+      <div class="footer-links">
+        <a href="#hero">Back to top ↑</a>
+        <a href="sem3/" target="_blank">Semester 3</a>
+        <a href="tina_cv.pdf" download="Tina_Shingrani_CV.pdf">CV</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
 </html>

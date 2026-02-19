@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <rect width="200" height="200" fill="#0C0C0C" rx="20"/>
-  <polygon points="50,40 150,40 150,100 100,100" fill="#0055FF"/>
-  <polygon points="50,100 100,100 100,160 50,100" fill="#0055FF" opacity="0.7"/>
-  <polygon points="100,100 150,100 100,160" fill="#0055FF" opacity="0.4"/>
-  <text x="100" y="185" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Framer</text>
-</svg>
