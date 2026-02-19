@@ -4,8 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open /vite-entry.html",
     "build": "vite build",
+    "build:deploy": "vite build && cp dist/vite-entry.html dist/index.html && cp dist/index.html index.html && rm -rf assets && cp -r dist/assets .",
     "preview": "vite preview"
   },
   "dependencies": {

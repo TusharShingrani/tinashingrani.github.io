@@ -27,6 +27,9 @@ jobs:
       - name: Build portfolio
         run: npm run build
 
+      - name: Rename built HTML to index.html
+        run: mv dist/vite-entry.html dist/index.html
+
       - name: Copy sem3 directory into dist
         run: |
           if [ -d "sem3" ]; then
